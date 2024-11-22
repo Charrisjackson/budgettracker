@@ -1,0 +1,52 @@
+@import "./styles.css";
+@import "./variable";
+body {
+  width: 100vw;
+  height: 100vh;
+  //   background: linear-gradient(#8fd3fe, #6ac5fe);
+
+  background-repeat: no-repeat;
+}
+main {
+  border: 10px solid #1338be;
+  border-radius: 20px;
+  width: 80%;
+
+  table {
+    width: 100%;
+  }
+  button {
+    background-color: $btncolor;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    padding: 5px;
+  }
+}
+.logo {
+  font-size: 3rem;
+  color: white;
+  border: 2px solid black;
+  width: 80vw;
+  text-align: center;
+}
+
+table {
+  //   border: 2px solid wh;
+  width: 80vw;
+  height: 70vh;
+  td {
+    border: 2px solid black;
+  }
+}
+.inputboxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+
+  input {
+    width: 180px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+}

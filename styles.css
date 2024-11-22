@@ -1,0 +1,53 @@
+@import "./styles.css";
+body {
+  background: linear-gradient(orange, #45b6fe);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+main {
+  border: 10px solid #1338be;
+  border-radius: 20px;
+  width: 80%;
+}
+main table {
+  width: 100%;
+}
+main button {
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+  padding: 5px;
+}
+
+.logo {
+  font-size: 3rem;
+  color: white;
+  border: 2px solid black;
+  width: 80vw;
+  text-align: center;
+}
+
+table {
+  width: 80vw;
+  height: 70vh;
+}
+table td {
+  border: 2px solid black;
+}
+
+.inputboxes {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+.inputboxes input {
+  width: 180px;
+  height: 50px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=styles.css.map */
