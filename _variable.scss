@@ -1,11 +1,13 @@
 $primary-color: #45b6fe;
+$linear-color1: #45b6fe;
+$linear-color2: #ff99cc;
 
 $btncolor: orange;
-
+// linear gradient for background
 @mixin gradient($color1, $color2) {
   background: linear-gradient($color1, $color2);
 }
 
 body {
-  background: linear-gradient($btncolor, $primary-color);
+  background: linear-gradient($linear-color1, $linear-color2);
 }

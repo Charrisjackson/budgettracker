@@ -7,63 +7,113 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-    <div class="header">
-      <div class="logo">💸BudgetBuddy💰</div>
-    </div>
-   <!-- two seperate table for income and expense -->
-    <!-- empty table/ div -->
-     <!--  -->
-
-      <table class="outputIncome">
-       <tr>
+  <h1>BUDGETBUDDY💵</h1>
+<div class="table">
+  <table class="content-table">
+    <thead>
+      <tr>
+        <!-- <th>CATEGORY</th> -->
         <th>INCOME</th>
-        <th>EXPENSES</th>
-       </tr>
-       <tr class="income row">
-        <td class="expenseOutput">add income</td>
-        <td>add expense</td>
-       </tr>
-       <tr>
+        <th>EXPENSE</th>
+        <th>DESCRIPTION</th>
+        <!-- <th>BUDGET</th> -->
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      
         <td>add income</td>
         <td>add expense</td>
-       </tr>
-       <tr>
+        <td>add description</td>
+        <!-- <td>calculated total</td> -->
+      </tr>
+      <tr>
+        
         <td>add income</td>
         <td>add expense</td>
-       </tr>
-       <tr class="expense row">
+        <td>add description</td>
+        <!-- <td>calculated total</td> -->
+      </tr>
+      <tr>
+        
         <td>add income</td>
         <td>add expense</td>
-       </tr>
-       <tr>
-        <td>add income</td>
-        <td>add expense</td>
-       </tr>
-       <tr>
-        <td>add income</td>
-        <td>add expense</td>
-       </tr>
-      </table>
-      <div class="inputboxes">
-      <div class="insertInput">
-        <label for="INCOME"></label>
-        <input type="text">
-        <button>Add input</button>
-        <label for="INCOME"></label>
-        <input type="text" class="description">
-        <button>Add description</button>
-      </div> 
-      <div class="insertexpense">
-        <label for="EXPENSES"></label>
-        <input type="text">
-        <button>Add expense </button>
-        <input type="text">
-        <button>Add description </button>
+        <td>add description</td>
+        <!-- <td>calculated total</td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+   <div class="summary">
+      <div>
+        <h1> Budget: <span id="updatebal"></span>0</h1>
+      </div>
+      <br>
+      <div class="total">
+        <div>Total Income:
+          <div>
+        <h2 style="color: #cd3380;" id="updatedInc">0</h2>
+      </div>
+     </div>
+     <!-- horizontal row "hr" -->
+     <hr class="vertical"/>
+     <div>Total Expenses:
+      <div>
+        <h2 style="color:red" id="updatedExp">0</h2>
+      </div>
+      </div>
+     </div>
+     </div>
+    <div class="main-input">
+      <div class="budgetform">
+        <div>
+          <!-- income input -->
+          <label for="income-input" class="form-label"> INCOME</label>
+          <input
+            type="text"
+          
+            id="income-input"
+            placeholder="$2,000"
+            class="form-input" 
+          />
+  </div>
+        <div>
+          <!-- expsense input -->
+          <label for="expense-input" class="form-label"> EXPENSE </label>
+          <input
+            type="text"
+          
+            id="expense-input"
+            placeholder="$100"
+            class="form-input" 
+          />
+      
+        </div>
+    </div>
+  </div>
+    </div>
+          <div class="descript">
+            <!-- description box -->
+            <label for="message" class="addDescription message"> Add description </label>
+            <textarea
+              rows="6"
+              name="message"
+              id="message"
+              placeholder="Type your message"
+              class="form-input" 
+            ></textarea>
+       
+          <button class="btn" >Submit Data</button>
+          </div>
+   
+         
+        </div>
+        </section>
       </div>
     </div>
-</div>
-</main>
-    <script src="script.js"></script>
+    
+
+    <script src="script2.js"></script>
   </body>
 </html>

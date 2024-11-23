@@ -1,52 +1,131 @@
-@import "./styles.css";
+// @import "./_variable.scss";
+
+@import "./table";
 @import "./variable";
+@import "./summary";
+@import "./queries";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
+  // background: linear-gradient($linear-color1, $linear-color2);
+  background: linear-gradient($linear-color1, $linear-color2);
+  background-repeat: no-repeat;
+  object-fit: cover;
   width: 100vw;
   height: 100vh;
-  //   background: linear-gradient(#8fd3fe, #6ac5fe);
-
-  background-repeat: no-repeat;
-}
-main {
-  border: 10px solid #1338be;
-  border-radius: 20px;
-  width: 80%;
-
-  table {
-    width: 100%;
-  }
-  button {
-    background-color: $btncolor;
-    color: white;
-    border-radius: 10px;
-    height: 40px;
-    padding: 5px;
+  box-sizing: border-box;
+  font-family: Bebas Neue;
+  h1 {
+    color: #07074d;
+    text-align: center;
   }
 }
-.logo {
-  font-size: 3rem;
-  color: white;
-  border: 2px solid black;
-  width: 80vw;
-  text-align: center;
-}
 
-table {
-  //   border: 2px solid wh;
-  width: 80vw;
-  height: 70vh;
-  td {
-    border: 2px solid black;
-  }
-}
-.inputboxes {
+.submit {
   display: flex;
-  justify-content: space-around;
-  margin: 5px;
+  align-items: center;
+}
+/* imporrting google fonts "inter" , and placing it in the body so that each elemnt inherits that same font-family styling*/
 
-  input {
-    width: 180px;
-    height: 50px;
-    margin-bottom: 5px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.main-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+
+  .inputform {
+    max-width: 550px;
+    width: 100%;
+    background: white;
   }
+  .input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 3px solid whitesmoke;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #07074d;
+    outline: none;
+  }
+  .descript {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.form-label {
+  color: #07074d;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 60%;
+  .form-input::placeholder {
+    color: #536387;
+    .form-input:focus {
+      border-color: #6a64f1;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+.addDescription {
+  color: #07074d;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: white;
+  width: 70%;
+  // margin-left: 650px;
+  margin-bottom: 0;
+}
+button {
+  text-align: center;
+  width: 70%;
+  // margin-left: 650px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 14px 25px;
+  font-family: Bebas Neue;
+  border: none;
+  font-weight: 500;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  // margin-top: 15px;
+}
+#message {
+  width: 70%;
+  // margin-left: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+.budgetform {
+  display: block;
+  unicode-bidi: isolate;
 }

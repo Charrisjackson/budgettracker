@@ -1,0 +1,44 @@
+.table {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  // align-items: center;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 100px;
+  width: 600px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+
+  /* table rows have square borders still, esnsures that border radius displays nicely */
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-top: 3cap;
+
+  thead tr {
+    background-color: #ff99cc;
+
+    color: white;
+
+    font-weight: bold;
+  }
+  th {
+    padding: 12px 15px;
+  }
+  td {
+    padding: 12px 15px;
+  }
+  tbody tr {
+    border-bottom: 1px solid lightgrey;
+  }
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #ff99cc;
+  }
+}

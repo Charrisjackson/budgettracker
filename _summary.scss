@@ -1,0 +1,26 @@
+.summary {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  padding: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid green;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  div {
+    width: 200px;
+  }
+}
+.vertical {
+  color: rgba(35, 35, 106);
+  margin: 0 2%;
+  border-width: 2px;
+}
