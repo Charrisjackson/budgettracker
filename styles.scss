@@ -15,8 +15,9 @@ body {
   height: 100vh;
   box-sizing: border-box;
   font-family: Bebas Neue;
+  overflow: scroll;
   h1 {
-    color: #07074d;
+    color: $primary-color;
     text-align: center;
   }
 }
@@ -33,6 +34,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   cursor: pointer;
+  overflow: scroll;
 }
 
 .main-input {
