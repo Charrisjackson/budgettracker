@@ -1,11 +1,5 @@
 # budgettracker
 
-<!-- 1. Thank you for using my budget planner app, BudgetBuddy. BudgetBuddy allows you to track your income and expense, and recieve a summary of your activity
-
-2. The description box provided allows you to add descriptions to your income and expsnes, so if you input "$2000" for your paycheck (income) and "$300" for groceries (expense), you should put " paycheck and grocery". If you only entered one or the other, the function works just the same!
-
-3. The "Add data" button submits whatever data you want it to! if youd like to include only an expense, only an income, or both, the "Add Data" button will allow you to do store your data all the same. This makes our app appear cleaner, and more responsive! Try it out! -->
-
 Directions:
 
 1. Add income, expense, or both.

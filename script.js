@@ -65,6 +65,7 @@ class BudgetUI {
   }
 
   // Handle form submission
+  // parsefloat turns input into a number
   handleSubmit() {
     const incomeValue = parseFloat(this.incomeInput.value) || 0;
     const expenseValue = parseFloat(this.expenseInput.value) || 0;
@@ -118,6 +119,7 @@ class BudgetUI {
       }
     } else {
       // Create a new row if it doesn't exist
+      // styling
       const newRow = document.createElement("tr");
       newRow.innerHTML = `
         <td style="${type === "income" ? amountStyle : ""}">
